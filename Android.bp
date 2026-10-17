@@ -651,39 +651,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.bluetooth_qti.default",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so",
-            ],
-            shared_libs: [
-                "libbluetooth_audio_session_qti_2_1",
-                "libbluetooth_audio_session_qti",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.alarm@1.0-impl",
     owner: "motorola",
     strip: {
@@ -3671,37 +3638,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libsqlite",
                 "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgdtap",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgdtap.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libgps.utils",
-                "liblog",
-                "libloc_core",
-                "libizat_core",
-                "liblbs_core",
                 "libc++",
                 "libc",
                 "libm",
@@ -18669,31 +18605,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "irsc_util",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/irsc_util",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "ks",
     owner: "motorola",
     target: {
@@ -20064,47 +19975,6 @@ cc_prebuilt_binary {
                 "libsys_info_cache",
                 "libpal_net_if",
                 "libqcc_file_agent",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "xtwifi-client",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/xtwifi-client",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libcrypto",
-                "libz",
-                "libsqlite",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libgps.utils",
-                "libloc_base_util",
-                "libloc_mq_client",
-                "liblowi_common",
-                "libloc_core",
-                "libizat_core",
-                "liblbs_core",
-                "libavservices_minijail",
-                "libgdtap",
-                "liblowi_client",
                 "libc++",
                 "libc",
                 "libm",

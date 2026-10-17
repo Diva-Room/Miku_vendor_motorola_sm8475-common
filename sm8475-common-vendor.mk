@@ -972,6 +972,7 @@ PRODUCT_PACKAGES += \
     init.qti.keymaster \
     init.qti.media \
     init.qti.qcv \
+    init.qti.write \
     ipacm-diag \
     irsc_util \
     ks \

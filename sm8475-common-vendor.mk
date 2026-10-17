@@ -1027,6 +1027,7 @@ PRODUCT_PACKAGES += \
     shsusrd \
     spdaemon \
     sscrpcd \
+    ssgqmigd64 \
     ssgtzd \
     ssr_setup \
     tftp_server \

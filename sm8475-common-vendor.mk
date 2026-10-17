@@ -1028,6 +1028,7 @@ PRODUCT_PACKAGES += \
     spdaemon \
     sscrpcd \
     ssgtzd \
+    ssr_setup \
     tftp_server \
     thermal-engine-v2 \
     time_daemon \
